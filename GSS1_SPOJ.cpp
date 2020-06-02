@@ -47,18 +47,11 @@ node query(ll index,ll s,ll e,ll l,ll r)
 	return tree[index];
 	
 	ll mid=(s+e)/2;
-	if(mid>=e)
-	return query(2*index,s,mid,l,r);
-	else if(mid<s)
-	return query(2*index+1,mid+1,e,l,r);
-	else
-	{
 	node left = query(2*index,s,mid,l,r);
 	node right = query(2*index+1,mid+1,e,l,r);
 	node result;
 	result.merge(left,right);
 	return result;
-	}
 }
 int main() {
 	// your code goes here
