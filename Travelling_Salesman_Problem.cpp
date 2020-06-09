@@ -24,6 +24,8 @@ let there be 4 cities
  These are till 2^N-1  //2^4-1 i.e 1 to 15 
  so for one city we have to search for other N-1 cities so complexity O(2^N * N)
 
+Also this problem refers to the shortest weighted HAMILTONIAN path in a graph
+Hamiltonian path refers to the path in which all vertice are visited once .
 
 #include <bits/stdc++.h>
 using namespace std;
