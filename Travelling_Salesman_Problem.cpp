@@ -31,6 +31,9 @@ Hamiltonian path refers to the path in which all vertice are visited once .
 using namespace std;
 #define n 4
 int dp[16][n]; //dp[2^n][n]
+  
+//dp array to store D-A se, D-B se, D-C se phele se he compute krke rakh lenge
+
 int dist[n][n];
 int tsp(int mask,int pos)
 {
