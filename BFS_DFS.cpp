@@ -30,6 +30,16 @@ class graph
          } 
       }
   }
+  void dfs(int node,vector<int>&visited)
+  {
+      cout<<node<<" ";
+      visited[node]=1;
+      for(auto nbr : adj[node])
+      {
+          if(!visited[nbr])
+          dfs(nbr,visited);
+      }
+  }
 };
 int main() {
     graph g;
@@ -41,6 +51,8 @@ int main() {
     g.addedge(3,5);
     g.addedge(4,3);
     g.bfs(0);
+    vector<int>visited(6,0);
+    g.dfs(0,visited);
 }
 /*
 
