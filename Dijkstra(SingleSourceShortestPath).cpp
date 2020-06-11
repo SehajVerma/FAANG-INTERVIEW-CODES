@@ -1,8 +1,9 @@
 #include <bits/stdc++.h>
 using namespace std;
-vector<vector<pair<int,int>>>adj(4,vector<pair<int,int>>());
+
 class graph
 {
+    map<int,list<pair<int,int>>>adj;
     public:
     void addedge(int u,int v,int dist)
     {
@@ -13,7 +14,7 @@ class graph
     {
         map<int,int>dist;
         set<pair<int,int>>s;
-        for(auto it:dist)
+        for(auto it:adj)
           dist[it.first] = INT_MAX;
 
         dist[src]=0;
@@ -41,7 +42,7 @@ class graph
             }
         }
         for(auto p : dist)
-        cout<<"Distance of"<<p.first<<"from "<<src<<"is "<<p.second<<endl;
+        cout<<"Distance of "<<p.first<<" from "<<src<<"is "<<p.second<<endl;
     }
 };
 int main() {
