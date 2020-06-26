@@ -79,3 +79,4 @@ int main()
     cout<<height[i]<<" "<<parent[i]<<endl;
     //cout<<LAC(4,6);
 }
+https://github.com/rachitiitr/DataStructures-Algorithms/blob/master/Library/Tree/dp-on-tree-type-c-LCA.cpp
