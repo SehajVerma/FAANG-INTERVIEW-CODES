@@ -1,0 +1,24 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    int wall,m,n;
+    cin>>wall>>m>>n;
+    int num_p=0,num_q=0,rem;
+    int p=0,q=0;
+    int empty = INT_MAX;
+    while(wall >= n)
+    {
+       p = wall/m;
+       rem = wall%m;
+
+       if(rem<=empty)
+       {
+           empty=rem;
+           num_p=p;
+           num_q=q;
+       }
+       q++;
+       wall = wall - n; 
+    }
+    cout<<num_p<<" "<<num_q<<" "<<empty;
+}
