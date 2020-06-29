@@ -1,3 +1,5 @@
+Solution Video: -https://www.youtube.com/watch?v=38JLfQGVlkw
+
 in brute force 0(n*n)  
 in optimized we sort both arrival and departure
 max one platform is needed
