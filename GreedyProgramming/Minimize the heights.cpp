@@ -1,3 +1,5 @@
+https://www.geeksforgeeks.org/minimize-the-maximum-difference-between-the-heights/
+
 #include <bits/stdc++.h>
 using namespace std;
 
