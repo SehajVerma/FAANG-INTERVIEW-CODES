@@ -1,5 +1,5 @@
 Problem - https://www.spoj.com/problems/AGGRCOW/
-Solution - https://www.youtube.com/watch?v=TC6snf6KPdE
+Explanation - https://www.youtube.com/watch?v=TC6snf6KPdE
 
 #include <bits/stdc++.h>
 using namespace std;
