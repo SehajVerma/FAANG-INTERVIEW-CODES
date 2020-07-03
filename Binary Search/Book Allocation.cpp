@@ -1,3 +1,4 @@
+#
 Explanation - https://www.youtube.com/watch?v=Ss9ta1zmiZo
 
 bool isValidConf(vector<int>&A,int B,int n,int mid)
