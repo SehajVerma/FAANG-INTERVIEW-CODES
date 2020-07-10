@@ -3,6 +3,8 @@ Complexity is O(Nlog(logN))
 Just a slight modification in Simple Sieve method
 Explanation - https://www.youtube.com/watch?v=fByR5N-TseY
               https://www.youtube.com/watch?v=khPI7I8H8CM&list=PL2q4fbVm1Ik4liHX78IRslXzUr8z5QxsG&index=30
+              
+Time complexity of this approach is O((R−L+1)loglog(R)+√Rloglog√R).
 
 #include <bits/stdc++.h>
 using namespace std;
