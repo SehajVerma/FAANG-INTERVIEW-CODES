@@ -12,8 +12,8 @@ public:
     {
         isBst=true;
         size=0;
-        minx=INT_MIN;
-        maxx=INT_MAX;
+        minx=INT_MAX;   //yaad rakho
+        maxx=INT_MIN;   //yaad rakho
     }
 };
 MinMax largest(Node* root)
