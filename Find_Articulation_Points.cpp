@@ -37,7 +37,7 @@ class graph
               
               low[node] = min(low[node],low[child]);
               
-              if(low[child]>inn[node] && parent!=-1)
+              if(low[child]>=inn[node] && parent!=-1)
                  "Node must be a Articulation Point" 
                  
               children++;
