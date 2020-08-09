@@ -32,7 +32,7 @@ class graph
                 int destDist = nbr.second;
                 if((nodeDist + destDist) < dist[dest] )
                 {
-                    auto f = s.find({destDist,dest});
+                    auto f = s.find({dist[dest],dest});
                     if(f!=s.end())
                     s.erase(f);
 
