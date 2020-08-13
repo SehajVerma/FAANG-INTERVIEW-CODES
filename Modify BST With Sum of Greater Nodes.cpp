@@ -22,6 +22,28 @@ void modify(node *root,int &sum)
     root->data=sum;
     modify(root->left,sum);
 }
+int sumreplace(BinaryTreeNode<int> *root,int sum){    // without pointer or static variable
+    
+    if(root == NULL)
+        return 0;
+    
+    int right=sumreplace(root->right,sum);
+    
+    if(right==0){
+        root->data=root->data+sum;
+    }
+    else{
+    root->data=root->data + right;
+    }
+    
+    int left=sumreplace(root->left,root->data);
+    if(left==0)
+        return root->data;
+    else
+        return left;
+     
+    
+}
 node *insertNode(vector<int>& v,node *root,int lower,int upper,int &root_idx)
 {
     if(root_idx == v.size())
