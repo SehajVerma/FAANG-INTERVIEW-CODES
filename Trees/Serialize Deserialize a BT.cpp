@@ -1,3 +1,5 @@
+https://backtobackswe.com/platform/content/serialize-and-deserialize-a-binary-tree/video
+
 class Solution {
   private static final String NULL_SYMBOL = "X";
   private static final String DELIMITER = ",";
