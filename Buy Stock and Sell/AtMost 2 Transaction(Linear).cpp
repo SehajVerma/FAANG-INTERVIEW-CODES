@@ -37,3 +37,21 @@ public:
         return maxprofit;
     }
 };
+
+
+Space ---  O(1)
+int maxProfit(const vector<int>& prices)
+    {
+        int firstBuy = numeric_limits<int>::min();
+        int firstSell = 0;
+        int secondBuy = numeric_limits<int>::min();
+        int secondSell = 0;
+        for (const int price : prices)
+        {
+            firstSell = max(firstSell, firstBuy + price);
+            firstBuy = max(firstBuy, -price);
+            secondBuy = max(secondBuy, firstSell - price);
+            secondSell = max(secondSell, secondBuy + price);
+        }
+        return secondSell;
+    }
