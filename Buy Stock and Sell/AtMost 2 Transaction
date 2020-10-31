@@ -1,0 +1,30 @@
+class Solution {
+public:
+    int maxpro(vector<int>&prices,int i,int k,int buyorSell)
+    {
+        if(i>=prices.size() || k<=0)
+        {
+            return 0;
+        }
+        
+        int x=0;
+        if(buyorSell)
+        {
+            int buy = maxpro(prices,i+1,k,false) - prices[i];
+            int nobuy = maxpro(prices,i+1,k,true);
+            x =  max(buy,nobuy);
+        }
+        else
+        {
+            int sell = maxpro(prices,i+1,k-1,true) + prices[i];
+            int nosell = maxpro(prices,i+1,k,false);
+            x = max(sell,nosell);
+        }
+        
+        return x;
+    }
+    int maxProfit(vector<int>& prices) {
+        
+        return maxpro(prices,0,2,true);
+    }
+};
